@@ -7,16 +7,19 @@ import { AppComponent } from './app.component';
 import { counterReducer } from './store/reducer/counter.reducer';
 import { CounterComponent } from './container/counter/counter.component';
 import { CounterViewComponent } from './components/counter-view/counter-view.component';
+import { TypedCounterComponent } from './container/typed-counter/typed-counter.component';
+import { typedCounterReducer } from './store/reducer/typed-counter.reducer';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    CounterViewComponent
+    CounterViewComponent,
+    TypedCounterComponent
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ count: counterReducer }),
+    StoreModule.forRoot({ count: counterReducer, typedCount: typedCounterReducer }),
     StoreDevtoolsModule.instrument({
       maxAge: 25
     }),
