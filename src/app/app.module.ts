@@ -4,10 +4,12 @@ import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { counterReducer } from './store/reducer/counter.reducer';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
