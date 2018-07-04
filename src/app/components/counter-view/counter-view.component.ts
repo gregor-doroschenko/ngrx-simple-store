@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CounterViewComponent {
 
-  @Input() counter: number;
+  @Input() count: number;
 
   constructor() { }
 
