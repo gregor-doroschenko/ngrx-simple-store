@@ -5,12 +5,14 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
 import { counterReducer } from './store/reducer/counter.reducer';
-import { CounterComponent } from './counter/counter.component';
+import { CounterComponent } from './container/counter/counter.component';
+import { CounterViewComponent } from './src/app/components/counter-view/counter-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterComponent
+    CounterComponent,
+    CounterViewComponent
   ],
   imports: [
     BrowserModule,
